@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     },
     body: JSON.stringify({
       model: "claude-haiku-4-5-20251001",
-      max_tokens: 1000,
+      max_tokens: 4096,
       system: `Korean language expert. Return ONLY valid JSON, no markdown.
 {"word":"string","isHomonym":boolean,"meanings":[{"hanja":"string|null","label":"string","coreMeaning":"string","exampleSentence":{"korean":"string","english":"string"},"contexts":[{"label":"string","icon":"emoji","description":"string","example":{"korean":"string","english":"string"}}],"collocations":[{"korean":"string","english":"string"}],"comparisons":[{"word":"string","nuance":"string"}],"tip":"string"}]}
 4-5 contexts, 5-6 collocations, 3-5 comparisons per meaning.`,
