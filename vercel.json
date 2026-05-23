@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/api/lookup", "destination": "/api/lookup.js" }
-  ]
-}
